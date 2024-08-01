@@ -1,0 +1,15 @@
+# Database
+nova.db
+
+# Python
+*.pyc
+.venv
+
+# Notebook
+notebooks/*/*/*
+agents
+.env.notebook
+
+# AppMap
+appmap.log
+
