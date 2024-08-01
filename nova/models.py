@@ -65,6 +65,16 @@ class Star(db.Model):
         return f"<Star {self.name}>"
 
 
+class Garrison(db.Model):
+    garrisonId = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    gameId = db.Column(db.Integer, db.ForeignKey("game.gameId"), nullable=False)
+    starId = db.Column(db.Integer, db.ForeignKey("star.starId"), nullable=False)
+    numShips = db.Column(db.Integer, nullable=False)
+
+    def __repr__(self):
+        return f"<Garrison {self.garrisonId}>"
+
+
 # Expose the MetaData object
 Base = db.Model
 metadata = db.Model.metadata
