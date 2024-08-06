@@ -3,7 +3,7 @@ nova.db
 
 # Python
 *.pyc
-.venv
+venv
 
 # Notebook
 notebooks/*/*/*
@@ -12,4 +12,5 @@ agents
 
 # AppMap
 appmap.log
+.navie
 

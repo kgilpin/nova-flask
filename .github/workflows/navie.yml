@@ -1,0 +1,82 @@
+name: Solve issue with Navie
+
+on:
+  issues:
+    types: [
+      opened,
+      edited,
+      reopened,
+      labeled,
+      unlabeled
+    ]
+
+jobs:
+  build-appmap-js:
+    if: contains(github.event.issue.labels.*.name, 'navie')
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      # Cache the appmap-js build
+      - name: Cache appmap-js build
+        uses: actions/cache@v4
+        id: cache-appmap-js
+        with:
+          lookup-only: true
+          path: |
+            submodules/appmap-js/node_modules
+            submodules/appmap-js/packages/*/built
+            submodules/appmap-js/packages/*/dist
+            submodules/appmap-js/packages/*/node_modules
+          key: appmap-js-dist-${{ runner.os }}-${{ hashFiles('.git/modules/submodules/appmap-js/HEAD') }}
+
+      - name: Set up Node.js
+        if: steps.cache-appmap-js.outputs.cache-hit != 'true'
+        uses: actions/setup-node@v3
+
+      - name: Build submodules
+        if: steps.cache-appmap-js.outputs.cache-hit != 'true'
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: true
+        run: |
+          cd submodules/appmap-js
+          git checkout -- .
+          yarn
+          yarn build
+          chmod +x packages/cli/built/cli.js
+  
+  solve:
+    if: contains(github.event.issue.labels.*.name, 'navie')
+    runs-on: ubuntu-latest
+    needs: build-appmap-js
+    env:
+      APPMAP_COMMAND: submodules/appmap-js/packages/cli/built/cli.js
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Restore appmap-js build
+        uses: actions/cache/restore@v4
+        id: cache-appmap-js
+        with:
+          fail-on-cache-miss: true
+          path: |
+            submodules/appmap-js/node_modules
+            submodules/appmap-js/packages/*/built
+            submodules/appmap-js/packages/*/dist
+            submodules/appmap-js/packages/*/node_modules
+          key: appmap-js-dist-${{ runner.os }}-${{ hashFiles('.git/modules/submodules/appmap-js/HEAD') }}
+
+      - name: Solve with Navie
+        run: |
+          echo "${{ github.event.issue.title }}" > issue.txt
+          echo "" >> issue.txt
+          echo "${{ github.event.issue.body }}" >> issue.txt
+
+          ./bin/solve
