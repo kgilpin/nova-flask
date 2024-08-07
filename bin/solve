@@ -13,4 +13,4 @@ with open("issue.txt", "r") as f:
 work_dir = os.path.join(".navie", "work")
 log_dir = os.path.join(".navie", "log")
 editor = Editor(work_dir, log_dir=log_dir)
-print(editor.plan(issue))
+editor.plan(issue)

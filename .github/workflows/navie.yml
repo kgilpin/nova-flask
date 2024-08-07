@@ -10,6 +10,10 @@ on:
       unlabeled
     ]
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   build-appmap-js:
     if: contains(github.event.issue.labels.*.name, 'navie')
@@ -55,6 +59,7 @@ jobs:
     env:
       APPMAP_COMMAND: submodules/appmap-js/packages/cli/built/cli.js
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -75,10 +80,14 @@ jobs:
 
       - name: Solve with Navie
         run: |
-          echo "${{ github.event.issue.title }}" > issue.txt
+          cat <<EOF > issue.txt
+          ${{ github.event.issue.title }}
+          EOF
           echo "" >> issue.txt
-          echo "${{ github.event.issue.body }}" >> issue.txt
-
+          cat <<EOF >> issue.txt
+          ${{ github.event.issue.body }}
+          EOF
+          
           ./bin/solve
 
           plan_file=.navie/work/plan/plan.md
