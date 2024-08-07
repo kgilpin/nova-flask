@@ -96,16 +96,21 @@ jobs:
           echo "<!-- navie-plan -->" > $master_plan_file
           echo "" >> $master_plan_file
           cat $generated_plan_file >> $master_plan_file
+          encoded_body=$(jq -Rs . < $master_plan_file)
 
           # Using gh tools, enumerate the issue comments and look for the comment with the embedded comment:
           # <!-- navie-plan -->
 
-          # If the comment is found, update the comment with the new plan
-          # If the comment is not found, add a new comment with the new plan
-
-          comment_id=$(gh issue comment list ${{ github.event.issue.number }} --json body,id --jq '.[] | select(.body | contains("<!-- navie-plan -->")) | .id')
+          comment_id=$(gh issue view ${{github.event.issue.number}} --json comments --jq '.comments[] | select(.body | contains("<!-- navie-plan -->")) | .id')
+    
+          # If the comment is found, edit the comment using cURL
+          # If the comment is not found, add a new comment using cURL
           if [ -z "$comment_id" ]; then
-            gh issue comment create ${{ github.event.issue.number }} --body "$(cat $master_plan_file)"
+            curl -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/json" \
+              -d "{\"body\": $encoded_body}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments"
           else
-            gh issue comment update $comment_id --body "$(cat $master_plan_file)"
+            curl -X PATCH -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/json" \
+              -d "{\"body\": $encoded_body}" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/comments/$comment_id"
           fi
