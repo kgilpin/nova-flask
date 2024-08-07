@@ -80,3 +80,12 @@ jobs:
           echo "${{ github.event.issue.body }}" >> issue.txt
 
           ./bin/solve
+
+          plan_file=.navie/work/plan/plan.md
+
+          # Add the plan to the issue as a comment
+          if [ -f "$plan_file" ]; then
+            gh issue comment ${{ github.event.issue.number }} --body "$(cat $plan_file)"
+          else
+            echo "No plan generated"
+          fi
