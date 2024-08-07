@@ -80,14 +80,14 @@ jobs:
 
       - name: Solve with Navie
         run: |
-          cat <<EOF > issue.txt
+          cat <<'EOF' > issue.txt
           ${{ github.event.issue.title }}
           EOF
           echo "" >> issue.txt
-          cat <<EOF >> issue.txt
+          cat <<'EOF' >> issue.txt
           ${{ github.event.issue.body }}
           EOF
-          
+
           ./bin/solve
 
           plan_file=.navie/work/plan/plan.md
