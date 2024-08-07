@@ -1,4 +1,4 @@
-name: Solve issue with Navie
+name: Plan issue with Navie
 
 on:
   issues:
@@ -52,7 +52,7 @@ jobs:
           yarn build
           chmod +x packages/cli/built/cli.js
   
-  solve:
+  plan:
     if: contains(github.event.issue.labels.*.name, 'navie')
     runs-on: ubuntu-latest
     needs: build-appmap-js
@@ -78,7 +78,7 @@ jobs:
             submodules/appmap-js/packages/*/node_modules
           key: appmap-js-dist-${{ runner.os }}-${{ hashFiles('.git/modules/submodules/appmap-js/HEAD') }}
 
-      - name: Solve with Navie
+      - name: Plan with Navie
         run: |
           cat <<'EOF' > issue.txt
           ${{ github.event.issue.title }}
@@ -88,13 +88,24 @@ jobs:
           ${{ github.event.issue.body }}
           EOF
 
-          ./bin/solve
+          ./bin/plan
 
-          plan_file=.navie/work/plan/plan.md
+          generated_plan_file=.navie/work/plan/plan.md
+          master_plan_file=.navie/plan.md
 
-          # Add the plan to the issue as a comment
-          if [ -f "$plan_file" ]; then
-            gh issue comment ${{ github.event.issue.number }} --body "$(cat $plan_file)"
+          echo "<!-- navie-plan -->" > $master_plan_file
+          echo "" >> $master_plan_file
+          cat $generated_plan_file >> $master_plan_file
+
+          # Using gh tools, enumerate the issue comments and look for the comment with the embedded comment:
+          # <!-- navie-plan -->
+
+          # If the comment is found, update the comment with the new plan
+          # If the comment is not found, add a new comment with the new plan
+
+          comment_id=$(gh issue comment list ${{ github.event.issue.number }} --json body,id --jq '.[] | select(.body | contains("<!-- navie-plan -->")) | .id')
+          if [ -z "$comment_id" ]; then
+            gh issue comment create ${{ github.event.issue.number }} --body "$(cat $master_plan_file)"
           else
-            echo "No plan generated"
+            gh issue comment update $comment_id --body "$(cat $master_plan_file)"
           fi
