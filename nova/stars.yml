@@ -1,0 +1,623 @@
+# List of stars with their magnitudes
+- name: Acamar
+  mag: 3.24
+- name: Achernar
+  mag: 0.46
+- name: Achird
+  mag: 3.44
+- name: Acrab
+  mag: 2.62
+- name: Acrux
+  mag: 1.33
+- name: Acrux A
+  mag: 1.33
+- name: Acrux B
+  mag: 2.1
+- name: Acubens
+  mag: 4.25
+- name: Adhafera
+  mag: 3.44
+- name: Adhara
+  mag: 1.5
+- name: Adhil
+  mag: 4.88
+- name: Agena
+  mag: 0.61
+- name: Ain
+  mag: 3.53
+- name: Ain Al Rami
+  mag: 4.83
+- name: Al Kalb Al Rai
+  mag: 5.5
+- name: Al Miniliar Al Asad
+  mag: 4.46
+- name: Aladfar
+  mag: 4.39
+- name: Alathfar
+  mag: 5.12
+- name: Albaldah
+  mag: 2.89
+- name: Albali
+  mag: 3.77
+- name: Albireo
+  mag: 3.08
+- name: Alchiba
+  mag: 4.02
+- name: Alcor
+  mag: 4.01
+- name: Alcyone
+  mag: 2.87
+- name: Aldebaran
+  mag: 0.85
+- name: Alderamin
+  mag: 2.44
+- name: Aldhibah
+  mag: 3.17
+- name: Alfecca Meridiana
+  mag: 4.11
+- name: Alfirk
+  mag: 3.23
+- name: Algedi Secunda
+  mag: 3.57
+- name: Algenib
+  mag: 2.83
+- name: Algieba
+  mag: 2.61
+- name: Algiedi Prima
+  mag: 4.24
+- name: Algol
+  mag: 2.12
+- name: Algorab
+  mag: 2.95
+- name: Alhena
+  mag: 1.93
+- name: Alioth
+  mag: 1.77
+- name: Alkaid
+  mag: 1.86
+- name: Alkalurops
+  mag: 4.31
+- name: Alkes
+  mag: 4.08
+- name: Alkurhah
+  mag: 4.29
+- name: Almaak
+  mag: 2.26
+- name: Almaaz
+  mag: 2.99
+- name: Alnair
+  mag: 1.74
+- name: Alnasl
+  mag: 2.99
+- name: Alnath
+  mag: 1.65
+- name: Alnilam
+  mag: 1.7
+- name: Alnitak
+  mag: 2.05
+- name: Alniyat
+  mag: 2.89
+- name: Alphard
+  mag: 1.98
+- name: Alphekka
+  mag: 2.23
+- name: Alpheratz
+  mag: 2.06
+- name: Alrami
+  mag: 3.97
+- name: Alrischa
+  mag: 4.33
+- name: Alsafi
+  mag: 4.68
+- name: Alshain
+  mag: 3.71
+- name: Alshat
+  mag: 4.76
+- name: Altair
+  mag: 0.77
+- name: Altais
+  mag: 3.07
+- name: Altarf
+  mag: 3.52
+- name: Alterf
+  mag: 4.31
+- name: Aludra
+  mag: 2.45
+- name: Alula Australis
+  mag: 4.41
+- name: Alula Borealis
+  mag: 3.48
+- name: Alya
+  mag: 4.62
+- name: Alzirr
+  mag: 3.36
+- name: Ancha
+  mag: 4.16
+- name: Andromeda Nebula
+  mag: 5.8
+- name: Angetenar
+  mag: 4.75
+- name: Ankaa
+  mag: 2.39
+- name: Anser
+  mag: 4.44
+- name: Antares
+  mag: 0.96
+- name: Arcturus
+  mag: -0.04
+- name: Arkab Posterior
+  mag: 4.29
+- name: Arkab Prior
+  mag: 4.01
+- name: Arneb
+  mag: 2.58
+- name: Arrakis
+  mag: 5.8
+- name: Ascella
+  mag: 2.6
+- name: Asellus Australis
+  mag: 3.94
+- name: Asellus Borealis
+  mag: 4.66
+- name: Asellus Primus
+  mag: 4.05
+- name: Asellus Secundus
+  mag: 4.75
+- name: Asellus Tertius
+  mag: 4.54
+- name: Asmidiske
+  mag: 3.34
+- name: Asterope
+  mag: 5.76
+- name: Atik
+  mag: 3.83
+- name: Atlas
+  mag: 3.63
+- name: Atria
+  mag: 1.92
+- name: Auva
+  mag: 3.38
+- name: Avior
+  mag: 1.86
+- name: Azelfafage
+  mag: 4.67
+- name: Azha
+  mag: 3.89
+- name: Baten Kaitos
+  mag: 3.73
+- name: Beid
+  mag: 4.04
+- name: Bellatrix
+  mag: 1.64
+- name: Betelgeuse
+  mag: 0.5
+- name: Biham
+  mag: 3.53
+- name: Bogardus
+  mag: 2.62
+- name: Booboo
+  mag: 2.74
+- name: Botein
+  mag: 4.35
+- name: Brachium
+  mag: 3.29
+- name: Bradley 3077
+  mag: 5.56
+- name: Canopus
+  mag: -0.72
+- name: Capella
+  mag: 0.08
+- name: Caph
+  mag: 2.27
+- name: Castor A
+  mag: 1.98
+- name: Castor B
+  mag: 2.9
+- name: Cebalrai
+  mag: 2.77
+- name: Celaeno
+  mag: 5.46
+- name: Chara
+  mag: 4.26
+- name: Chertan
+  mag: 3.34
+- name: Cor Caroli
+  mag: 2.9
+- name: Cursa
+  mag: 2.79
+- name: Dabih
+  mag: 3.08
+- name: Dabih Minor
+  mag: 6.1
+- name: Deneb
+  mag: 1.25
+- name: Deneb Algedi
+  mag: 2.87
+- name: Deneb Dulfim
+  mag: 4.03
+- name: Deneb El Okab
+  mag: 4.02
+- name: Deneb Kaitos Shemali
+  mag: 3.56
+- name: Denebola
+  mag: 2.14
+- name: Diadem
+  mag: 5.22
+- name: Diphda
+  mag: 2.04
+- name: Double Double
+  mag: 5.06
+- name: Dschubba
+  mag: 2.32
+- name: Dubhe
+  mag: 1.79
+- name: Dziban
+  mag: 4.58
+- name: Ed Asich
+  mag: 3.29
+- name: Electra
+  mag: 3.7
+- name: Enif
+  mag: 2.39
+- name: Errai
+  mag: 3.21
+- name: Etamin
+  mag: 2.23
+- name: Fieht
+  mag: 2.56
+- name: Fomalhaut
+  mag: 1.16
+- name: Fornacis
+  mag: 3.87
+- name: Fum Al Samakah
+  mag: 4.53
+- name: Furud
+  mag: 3.02
+- name: Gacrux
+  mag: 1.63
+- name: Galt
+  mag: 2.0
+- name: Giausar
+  mag: 3.84
+- name: Gienah
+  mag: 2.46
+- name: Gienah Ghurab
+  mag: 2.59
+- name: Girtab
+  mag: 1.87
+- name: Gomeisa
+  mag: 2.9
+- name: Gorgonea Quarta
+  mag: 4.63
+- name: Gorgonea Secunda
+  mag: 4.7
+- name: Gorgonea Tertia
+  mag: 3.39
+- name: Groombridge 1830
+  mag: 8.5
+- name: Grumium
+  mag: 3.75
+- name: Hamal
+  mag: 2.0
+- name: Hassaleh
+  mag: 2.69
+- name: Head Of Hydrus
+  mag: 2.86
+- name: Heka
+  mag: 3.54
+- name: Herschels Garnet Star
+  mag: 4.08
+- name: Heze
+  mag: 3.37
+- name: Hinds Crimson Star
+  mag: 5.5
+- name: Hoedus I
+  mag: 3.75
+- name: Hoedus Ii
+  mag: 3.17
+- name: Homam
+  mag: 3.4
+- name: Hr2748
+  mag: 2.6
+- name: Hr3803
+  mag: 3.12
+- name: Hr4140
+  mag: 3.3
+- name: Hr6630
+  mag: 3.2
+- name: Hyadum I
+  mag: 3.65
+- name: Hyadum Ii
+  mag: 3.76
+- name: Izar
+  mag: 2.7
+- name: Jabbah
+  mag: 4.01
+- name: Kaffaljidhma
+  mag: 3.47
+- name: Kajam
+  mag: 4.57
+- name: Kaus Australis
+  mag: 1.85
+- name: Kaus Borealis
+  mag: 2.81
+- name: Kaus Media
+  mag: 2.7
+- name: Keid
+  mag: 4.43
+- name: Kitalpha
+  mag: 3.92
+- name: Kocab
+  mag: 2.08
+- name: Kornephoros
+  mag: 2.77
+- name: Kraz
+  mag: 2.65
+- name: Kuma
+  mag: 4.87
+- name: Lesath
+  mag: 2.69
+- name: Maasym
+  mag: 4.41
+- name: Mabsuthat
+  mag: 4.25
+- name: Maia
+  mag: 3.87
+- name: Marfak
+  mag: 4.33
+- name: Marfic
+  mag: 3.82
+- name: Marfik
+  mag: 5.0
+- name: Marj
+  mag: 2.47
+- name: Markab
+  mag: 2.49
+- name: Matar
+  mag: 2.94
+- name: Mebsuta
+  mag: 2.98
+- name: Megrez
+  mag: 3.31
+- name: Mekbuda
+  mag: 3.79
+- name: Menkalinan
+  mag: 1.9
+- name: Menkar
+  mag: 2.53
+- name: Menkent
+  mag: 2.06
+- name: Menkib
+  mag: 4.04
+- name: Merak
+  mag: 2.37
+- name: Merga
+  mag: 5.74
+- name: Merope
+  mag: 4.18
+- name: Mesarthim
+  mag: 4.75
+- name: Miaplacidus
+  mag: 1.68
+- name: Mimosa
+  mag: 1.25
+- name: Minchir
+  mag: 4.44
+- name: Minkar
+  mag: 3.0
+- name: Mintaka
+  mag: 2.23
+- name: Mira
+  mag: 2.0
+- name: Mirach
+  mag: 2.06
+- name: Miram
+  mag: 3.76
+- name: Mirphak
+  mag: 1.79
+- name: Mirzam
+  mag: 1.98
+- name: Mizar
+  mag: 2.27
+- name: Mothallah
+  mag: 3.41
+- name: Muliphein
+  mag: 4.12
+- name: Muphrid
+  mag: 2.68
+- name: Muscida
+  mag: 3.36
+- name: Nair Al Saif
+  mag: 2.77
+- name: Naos
+  mag: 2.25
+- name: Nashira
+  mag: 3.68
+- name: Nekkar
+  mag: 3.5
+- name: Nihal
+  mag: 2.84
+- name: Nunki
+  mag: 2.02
+- name: Nusakan
+  mag: 3.68
+- name: Peacock
+  mag: 1.94
+- name: Phact
+  mag: 2.64
+- name: Phad
+  mag: 2.44
+- name: Pherkad
+  mag: 3.05
+- name: Pherkad Minor
+  mag: 5.02
+- name: Plasketts Star
+  mag: 6.04
+- name: Pleione
+  mag: 4.77
+- name: Polaris
+  mag: 2.02
+- name: Polaris Australis
+  mag: 5.47
+- name: Pollux
+  mag: 1.14
+- name: Poririma
+  mag: 3.65
+- name: Praecipua
+  mag: 3.83
+- name: Procyon
+  mag: 0.38
+- name: Propus
+  mag: 3.28
+- name: Proxima Centauri
+  mag: 12.1
+- name: Rana
+  mag: 3.54
+- name: Ras Elased Australis
+  mag: 2.98
+- name: Rasalas
+  mag: 3.88
+- name: Rasalgethi
+  mag: 3.48
+- name: Rasalhague
+  mag: 2.08
+- name: Rastaban
+  mag: 2.79
+- name: Regulus
+  mag: 1.35
+- name: Rigel
+  mag: 0.12
+- name: Rigil Kentaurus
+  mag: -0.01
+- name: Rijl As Awwa
+  mag: 3.88
+- name: Rotanev
+  mag: 3.63
+- name: Ruchbah
+  mag: 2.68
+- name: Sabik
+  mag: 2.43
+- name: Sadachbia
+  mag: 3.84
+- name: Sadalbari
+  mag: 3.48
+- name: Sadalmelik
+  mag: 2.96
+- name: Sadalsuud
+  mag: 2.91
+- name: Sadr
+  mag: 2.2
+- name: Saiph
+  mag: 2.06
+- name: Salm
+  mag: 4.6
+- name: Sarin
+  mag: 3.14
+- name: Sceptrum
+  mag: 3.87
+- name: Scheat
+  mag: 2.42
+- name: Segin
+  mag: 3.38
+- name: Seginus
+  mag: 3.03
+- name: Sham
+  mag: 4.37
+- name: Shaula
+  mag: 1.63
+- name: Shedir
+  mag: 2.23
+- name: Sheliak
+  mag: 3.45
+- name: Sheratan
+  mag: 2.64
+- name: Sirius
+  mag: -1.46
+- name: Situla
+  mag: 5.03
+- name: Skat
+  mag: 3.27
+- name: Spica
+  mag: 0.98
+- name: Sterope Ii
+  mag: 6.43
+- name: Sualocin
+  mag: 3.77
+- name: Subra
+  mag: 3.52
+- name: Suhail
+  mag: 2.21
+- name: Suhail Al Muhlif
+  mag: 1.78
+- name: Sulafat
+  mag: 3.24
+- name: Syrma
+  mag: 4.08
+- name: Tabit
+  mag: 3.19
+- name: Talitha
+  mag: 3.14
+- name: Tania Australis
+  mag: 3.05
+- name: Tania Borealis
+  mag: 3.45
+- name: Tarazed
+  mag: 2.72
+- name: Taygeta
+  mag: 4.3
+- name: Tegmen
+  mag: 5.63
+- name: Tejat Posterior
+  mag: 2.88
+- name: Terebellum
+  mag: 4.7
+- name: Theemim
+  mag: 3.82
+- name: Thuban
+  mag: 3.65
+- name: Torcularis Septentrionalis
+  mag: 4.26
+- name: Trapezium
+  mag: 7.9
+- name: Turais
+  mag: 2.25
+- name: Tyl
+  mag: 3.83
+- name: Unukalhai
+  mag: 2.65
+- name: Vega
+  mag: 0.03
+- name: Vindemiatrix
+  mag: 2.83
+- name: Wasat
+  mag: 3.53
+- name: Wazn
+  mag: 3.12
+- name: Wezen
+  mag: 1.84
+- name: Yed Posterior
+  mag: 3.24
+- name: Yed Prior
+  mag: 2.74
+- name: Yildun
+  mag: 4.36
+- name: Zaniah
+  mag: 3.89
+- name: Zaurak
+  mag: 2.95
+- name: Zavijava
+  mag: 3.61
+- name: Zibal
+  mag: 4.8
+- name: Zosma
+  mag: 2.56
+- name: Zuben Elakribi
+  mag: 4.92
+- name: Zuben Elgenubi
+  mag: 2.75
+- name: Zuben Eschamali
+  mag: 2.61
+- name: Zuben Hakriki
+  mag: 3.91
+- name: Q Car
+  mag: 3.36
